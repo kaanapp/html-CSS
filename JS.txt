@@ -1,0 +1,104 @@
+---------------------------------------  JS  --------------------------------------------
+
+
+REACT: 
+JS'in frontend için kullanılan hazır bir kütüphanesidir.
+
+REACT NATİVE:
+Mobil uygulama geliştirmek için kullanılır.
+
+NODE.JS:
+JS'in backend için kullanılan hazır bir kütüphanesidir.
+ 
+Visual Studio JS eklentileri : 
+1-auto rename tag: Html kodu yazarken etiketin başını değiştirince kapanışını da otomatik -değiştiren eklenti.
+2- Better Comments: Yorum satırlarını renklendirip kullanıcıya vverir.
+	// * Kaan (Yeşil renkli bir yorum satırı yapar.)
+	// ? Kaan (Mavi renkli bir yorum satırı yapar.)
+	// ! Kaan (Kırmızı renkli uyarı şeklind bir yorum satırı yapar.)
+	// TODO (Turuncu renkli // // // // // )
+
+3- Javascript console utils: web sayfasını sağ tık incele diyince çıkan console çıktılarını kaldırmaya yarıyor. (Ctrl+shift+D ile kaldırır.)
+ 
+4- Javascript code snippets : otomatik tamamamlama özelliği sağğlar.
+
+*** JS kodu head içerisinde body içerisinde ya da harici bir projeden eklenti olarka kullanılabilir. Fakat kodlama sırasından dolayı (yukarıdan aşağı) genelde body tagının bitişinin hemen üstünde js kodları yerleştirilir.  
+
+HTML sınıfının en büyük objesi window objesidir. Bu objenin içerisinde document, console .. gibi metotlar bulunur. Bu metotlarınn içerisinden fonksiyonlara erişilerek ilgili yerlerde kullanılabilinir.
+
+Local Storage - Sessioon storage arasındaki fark, local storage'da olan bilgiler elle silinmediği sürece gitmez fakat session storage'daki bigiler tarayıcı kapataılınca gider.
+
+Javascript'te değişkenler 3 şekilde tanımlanır.
+ 
+ VAR    ----- LET ------ CONST
+
+var ile tanımlanan her şey function scope'tur. var ile bir değişken bir blok içerisinde tanımlansa dahi function scope gibi davranır ve function içerisinden erişilebilinir.
+let ve const: bu iki parametre ile de tanımlanan değişkenlere block scope özelliği kazandırılmış olunur.
+Var ile aynı değişken isminden birden fazla kez değişken atanabilir.(En son atanan değeri kabul eder.) Let ve const ile mümkün değildir. Sadece bir kez atanır ve kod içerisinde ikinciyi tanımlamaya izin vermez. 
+
+
+VERİ TİPLERİ :
+string - number- boolean - null - undefined- object- function
+
+değişken türünden (var-let-const) sonra değişkenin adı ve = koyulup {} parantezi açılarak o değişken türünden obje oluşturulmuş olunur.Örnek ;
+
+var insan ={
+	....
+	}
+--> insan objesi oluşturuldu.
+
+
+"function" tanımlaaması da aynı obje tanımlaması gibi yapılır. tek farkı parantezden önce function olarak belirtilmesidir.
+
+let insan = function(){
+	.....
+	}
+---> insan fonksiyonu oluşturuldu.
+
+
+
+DIALOG KUTULARI 
+
+Kullanıcıdan girdi almak için "prompt()" fonksiyonu çağrılır.
+Kullanıcıdan alınan değerler her zaman string tipindedir. Sayı bile girilse string döner.
+
+
+"confirm" ile boolean döner. kullanıcıdan Tamam(true) ya da İptal (false) değerini alarak sonuç döndürürüz.
+
+
+TYPE CONVERT
+Eğer string tarzda bir ifadeyi integer tarzında bir ifadeye dönüştürmek istersek;
+Örnek;
+
+let b = "5";
+console.log(typeof b);
+---->string
+let c = Number(b);
+console.log(typeof c);
+--->integer
+
+olur.
+
+Ekstra bir yöntem olarak window sınıfının bir metodu olan "parseInt" özelliğini kullanarak da string veri tipindeki bir değeri integer tipine dönüştürüp işlem yapabiliriz.
+
+let a = 5;
+let b = parseInt("10");
+console.log(a+b) 
+---> 15
+ çıktısını verecektir.
+
+ 
+do-while döngüsünde -> while içerisindeki koşul False olana kadar while içerisinde dönecektir. False olduğunda do bloğuna (bir üst bloğa) çıkacaktır.
+	break ile döngüyü kırarız, continue ile devam eder.
+
+----> JAVASCRIPT METOTLAR <----
+
+
+
+
+
+
+	
+
+
+
